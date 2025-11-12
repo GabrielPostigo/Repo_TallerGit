@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gapostig <gapostig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/12 14:08:02 by gapostig          #+#    #+#             */
-/*   Updated: 2025/11/12 14:17:38 by gapostig         ###   ########.fr       */
+/*   Created: 2025/11/12 14:18:00 by gapostig          #+#    #+#             */
+/*   Updated: 2025/11/12 14:18:50 by gapostig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
-void	ft_putstr(char *c)
+void	ft_putchar(char c)
 {
-	int	i;
-
-	i = 0;
-	while (c[i])
-	{
-		write(1, c[i], 1);
-		i++;
-	}
-}
-
-int	main(void)
-{
-	printf("Hola Mundo!");
-	return (0);
+	write (1, c, 1);
 }
